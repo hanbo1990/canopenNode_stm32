@@ -1,0 +1,734 @@
+!SESSION 2020-07-12 19:05:05.960 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_cn_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\coding\multican
+
+!ENTRY org.eclipse.ui 2 0 2020-07-12 19:05:08.350
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-07-12 19:05:08.360
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-07-12 19:05:15.008
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-07-12 19:05:15.008
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-07-12 19:05:15.008
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-12 19:05:15.308
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hanbo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 4 2020-07-12 19:05:46.704
+!MESSAGE jlinkCfgFileExist && stlinkCfgFileExist
+
+!ENTRY org.eclipse.debug.core 4 125 2020-07-12 19:05:47.794
+!MESSAGE 调试核心所记录的错误：
+!STACK 1
+org.eclipse.core.runtime.CoreException: 找不到文件：D:\coding\multican\bootloader\.settings\bootloader.JLink.Debug.launch。
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:409)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1358)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645)
+	at org.eclipse.debug.internal.core.LaunchManager.isValid(LaunchManager.java:2091)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:2114)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:372)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2276)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: D:\coding\multican\bootloader\.settings\bootloader.JLink.Debug.launch (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:404)
+	... 20 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 269 2020-07-12 19:05:47.794
+!MESSAGE 找不到文件：D:\coding\multican\bootloader\.settings\bootloader.JLink.Debug.launch。
+!STACK 0
+java.io.FileNotFoundException: D:\coding\multican\bootloader\.settings\bootloader.JLink.Debug.launch (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:404)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1358)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645)
+	at org.eclipse.debug.internal.core.LaunchManager.isValid(LaunchManager.java:2091)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:2114)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:372)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2276)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2020-07-12 19:05:47.794
+!MESSAGE 调试核心所记录的错误：
+!STACK 1
+org.eclipse.core.runtime.CoreException: 找不到文件：D:\coding\multican\bootloader\.settings\bootloader.STLink.Debug.launch。
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:409)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1358)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645)
+	at org.eclipse.debug.internal.core.LaunchManager.isValid(LaunchManager.java:2091)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:2114)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:372)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2276)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: D:\coding\multican\bootloader\.settings\bootloader.STLink.Debug.launch (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:404)
+	... 20 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 269 2020-07-12 19:05:47.794
+!MESSAGE 找不到文件：D:\coding\multican\bootloader\.settings\bootloader.STLink.Debug.launch。
+!STACK 0
+java.io.FileNotFoundException: D:\coding\multican\bootloader\.settings\bootloader.STLink.Debug.launch (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:404)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1358)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645)
+	at org.eclipse.debug.internal.core.LaunchManager.isValid(LaunchManager.java:2091)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:2114)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:372)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2276)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-12 19:05:56.172
+!MESSAGE Indexed 'bootloader' (142 sources, 245 headers) in 8.27 sec: 20,680 declarations; 83,801 references; 14 unresolved inclusions; 56 syntax errors; 145 unresolved names (0.14%)
+
+!ENTRY org.rt-thread.studio.project.ui 4 0 2020-07-12 19:06:29.764
+!MESSAGE Send or Reveive Pin Name is Null
+
+!ENTRY org.rt-thread.studio.project.ui 4 0 2020-07-12 19:06:29.774
+!MESSAGE Send or Reveive Pin Name is Null
+
+!ENTRY org.rt-thread.studio.project.ui 4 0 2020-07-12 19:06:29.774
+!MESSAGE Send or Reveive Pin Name is Null
+
+!ENTRY org.rt-thread.studio.project.ui 4 0 2020-07-12 19:06:29.784
+!MESSAGE Send or Reveive Pin Name is Null
+
+!ENTRY org.rt-thread.studio.project.ui 4 0 2020-07-12 19:06:31.804
+!MESSAGE Send or Reveive Pin Name is Null
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio>cd D:/RT-ThreadStudio/plugins/org.rt-thread.studio.project.gener_1.0.13/gener 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set RTT_ROOT= 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set ENV_ROOT=D:/RT-ThreadStudio/platform/env_released/env 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set RTT_EXEC_PATH=D:/RT-ThreadStudio/repo/Extract/ToolChain_Support_Packages/ARM/GNU_Tools_for_ARM_Embedded_Processors/5.4.1/bin 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set KCONF_EXEC_PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\exec 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set RTT_CC=gcc 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set SCONS=D:/RT-ThreadStudio/platform/env_released/env\tools\Python27\Scripts 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PKGS_ROOT=D:/RT-ThreadStudio/platform/env_released/env\packages 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\Python27;D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\Python27\Scripts;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27;D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\bin;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27\Scripts;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27;D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/repo/Extract/ToolChain_Support_Packages/ARM/GNU_Tools_for_ARM_Embedded_Processors/5.4.1/bin;D:/RT-ThreadStudio/platform/env_released/env\tools\bin;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27\Scripts;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27;D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\exec;D:/RT-ThreadStudio/repo/Extract/ToolChain_Support_Packages/ARM/GNU_Tools_for_ARM_Embedded_Processors/5.4.1/bin;D:/RT-ThreadStudio/platform/env_released/env\tools\bin;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27\Scripts;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27;D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.509
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\qemu\qemu32;D:/RT-ThreadStudio/platform/env_released/env\tools\exec;D:/RT-ThreadStudio/repo/Extract/ToolChain_Support_Packages/ARM/GNU_Tools_for_ARM_Embedded_Processors/5.4.1/bin;D:/RT-ThreadStudio/platform/env_released/env\tools\bin;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27\Scripts;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27;D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.519
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PYTHONPATH=D:/RT-ThreadStudio/platform/env_released/env\tools\Python27; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.519
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>set PATH=D:/RT-ThreadStudio/platform/env_released/env\tools\qemu\qemu32;D:/RT-ThreadStudio/platform/env_released/env\tools\exec;D:/RT-ThreadStudio/repo/Extract/ToolChain_Support_Packages/ARM/GNU_Tools_for_ARM_Embedded_Processors/5.4.1/bin;D:/RT-ThreadStudio/platform/env_released/env\tools\bin;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27\Scripts;D:/RT-ThreadStudio/platform/env_released/env\tools\Python27;D:/RT-ThreadStudio/platform/env_released/env\tools\MinGit-2.25.1-32-bit\cmd;D:/RT-ThreadStudio/jre/bin/server;D:/RT-ThreadStudio/jre/bin;D:/RT-ThreadStudio/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\hanbo\AppData\Local\Microsoft\WindowsApps;C:\Users\hanbo\AppData\Local\GitHubDesktop\bin;C:\Users\hanbo\AppData\Local\Programs\Microsoft VS Code\bin;D:\RT-ThreadStudio;; 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:41.519
+!MESSAGE D:\RT-ThreadStudio\plugins\org.rt-thread.studio.project.gener_1.0.13\gener>"D:/RT-ThreadStudio/plugins/org.rt-thread.studio.project.gener_1.0.13/gener/prj_gen.exe" --csp_project="true" --csp_parameter_file="D:\coding\multican/.metadata/Temp/rtt_parameter_demo.json" -n xxx 
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.429
+!MESSAGE scons: Reading SConscript files ...
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.619
+!MESSAGE Kconfig:5: warning: BSP_ROOT has 'option env="BSP_DIR"', but the environment variable BSP_DIR is not set
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.619
+!MESSAGE Kconfig:5: warning: Kconfiglib expands environment variables in strings directly, meaning you do not need 'option env=...' "bounce" symbols. For compatibility with the C tools, rename BSP_DIR to BSP_ROOT (so that the symbol name matches the environment variable name).
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.619
+!MESSAGE Kconfig:10: warning: RTT_ROOT has 'option env="RTT_DIR"', but the environment variable RTT_DIR is not set
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.619
+!MESSAGE Kconfig:10: warning: Kconfiglib expands environment variables in strings directly, meaning you do not need 'option env=...' "bounce" symbols. For compatibility with the C tools, rename RTT_DIR to RTT_ROOT (so that the symbol name matches the environment variable name).
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.619
+!MESSAGE Kconfig:15: warning: Kconfiglib expands environment variables in strings directly, meaning you do not need 'option env=...' "bounce" symbols. For compatibility with the C tools, rename PKGS_DIR to PKGS_ROOT (so that the symbol name matches the environment variable name).
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.629
+!MESSAGE warning: RT_VBUS_USING_TESTS (defined at rt-thread/components/vbus/Kconfig:22) has leading or trailing whitespace in its prompt
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.629
+!MESSAGE warning: RT_VBUS_GUEST_VIRQ (defined at rt-thread/components/vbus/Kconfig:36) defined with more than one help text -- only the last one will be used
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.639
+!MESSAGE warning: SALOF_LOG_LEVEL (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/kawaii-mqtt/Kconfig:76) has leading or trailing whitespace in its prompt
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.689
+!MESSAGE D:/RT-ThreadStudio/platform/env_released/env\packages/packages/system/gui_engine/Kconfig:32: warning: style: quotes recommended around '32' in 'bool 32'
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.689
+!MESSAGE D:/RT-ThreadStudio/platform/env_released/env\packages/packages/system/gui_engine/Kconfig:35: warning: style: quotes recommended around '24' in 'bool 24'
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.719
+!MESSAGE warning: PKG_USING_DRV_INFRARED (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/infrared/Kconfig:24) has leading or trailing whitespace in its prompt
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol RT_LWIP_IPADDR (defined at rt-thread/components/net/Kconfig:167)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol RT_LWIP_GWADDR (defined at rt-thread/components/net/Kconfig:171)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol RT_LWIP_MSKADDR (defined at rt-thread/components/net/Kconfig:175)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol DHCPD_SERVER_IP (defined at rt-thread/components/net/Kconfig:458)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol DHCP_DNS_SERVER_IP (defined at rt-thread/components/net/Kconfig:470)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol WIZ_IPADDR (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/wiznet/Kconfig:58)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol WIZ_GWADDR (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/wiznet/Kconfig:62)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol WIZ_MSKADDR (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/wiznet/Kconfig:66)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol PKG_USING_ALI_IOTKIT_PRODUCT_KEY (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/iot_cloud/ali-iotkit/Kconfig:15)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol PKG_USING_ALI_IOTKIT_PRODUCT_SECRET (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/iot_cloud/ali-iotkit/Kconfig:19)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol PKG_USING_ALI_IOTKIT_DEVICE_SECRET (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/iot_cloud/ali-iotkit/Kconfig:27)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol PKG_USING_TENCENT_IOT_EXPLORER_DEVICE_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/iot_cloud/tencent-iot-sdk/Kconfig:18)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_DEVICE_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:18)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: style: quotes recommended around default value for string symbol LORA_RADIO0_SPI_BUS_NAME (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:52, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:61, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:70, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:164, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:173, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:182, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:272, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:281, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:290, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:383, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:392, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/peripherals/lora_radio_driver/Kconfig:401)
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: the default selection ABUP_NETWORKING_MODE (undefined) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/abup_fota/Kconfig:13) is not contained in the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: the default selection ABUP_ALGORITHM (undefined) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/iot/abup_fota/Kconfig:38) is not contained in the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: the default selection PKG_USING_KERNEL_SAMPLES_V030 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:19, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:19) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:13) is not contained in the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: the choice symbol PKG_USING_KERNEL_SAMPLES_V030 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:19, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:19) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: the choice symbol PKG_USING_KERNEL_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:22, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:22) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: the default selection PKG_USING_FILESYSTEM_SAMPLES_V020 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:20) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:14) is not contained in the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.769
+!MESSAGE warning: the choice symbol PKG_USING_FILESYSTEM_SAMPLES_V020 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:20) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_FILESYSTEM_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:23, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:23) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the default selection PKG_USING_NETWORK_SAMPLES_V030 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:19, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:19) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:13) is not contained in the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_NETWORK_SAMPLES_V030 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:19, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:19) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_NETWORK_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:22, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:22) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the default selection PKG_USING_PERIPHERAL_SAMPLES_V040 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:20) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:14) is not contained in the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_PERIPHERAL_SAMPLES_V040 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:20) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_PERIPHERAL_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:23, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:23) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_KERNEL_SAMPLES_V030 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:19, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:19) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_KERNEL_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:22, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/kernel_samples/Kconfig:22) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_FILESYSTEM_SAMPLES_V020 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:20) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_FILESYSTEM_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:23, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/filesystem_samples/Kconfig:23) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_NETWORK_SAMPLES_V030 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:19, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:19) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_NETWORK_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:22, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/network_samples/Kconfig:22) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_PERIPHERAL_SAMPLES_V040 (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:20) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.779
+!MESSAGE warning: the choice symbol PKG_USING_PERIPHERAL_SAMPLES_LATEST_VERSION (defined at D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:23, D:/RT-ThreadStudio/platform/env_released/env\packages/packages/misc/samples/peripheral_samples/Kconfig:23) is defined with a prompt outside the choice
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.789
+!MESSAGE Loaded configuration '.config'
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:45.799
+!MESSAGE Configuration saved to '.config'
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:46.009
+!MESSAGE scons: Reading SConscript files ...
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:46.189
+!MESSAGE Update eclipse setting...
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.520
+!MESSAGE done!
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.520
+!MESSAGE scons: done reading SConscript files.
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.520
+!MESSAGE scons: Building targets ...
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.520
+!MESSAGE scons: building associated VariantDir targets: build
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.550
+!MESSAGE CC build\kernel\components\drivers\misc\pin.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.560
+!MESSAGE CC build\kernel\components\drivers\serial\serial.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.560
+!MESSAGE CC build\kernel\components\drivers\src\completion.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.560
+!MESSAGE CC build\kernel\components\drivers\src\dataqueue.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.570
+!MESSAGE CC build\kernel\components\drivers\src\pipe.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.570
+!MESSAGE CC build\kernel\components\drivers\src\ringblk_buf.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.570
+!MESSAGE CC build\kernel\components\drivers\src\ringbuffer.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.570
+!MESSAGE CC build\kernel\components\drivers\src\waitqueue.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.580
+!MESSAGE CC build\kernel\components\drivers\src\workqueue.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.580
+!MESSAGE CC build\kernel\components\finsh\cmd.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.590
+!MESSAGE CC build\kernel\components\finsh\msh.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.590
+!MESSAGE CC build\kernel\components\finsh\shell.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.600
+!MESSAGE CC build\kernel\components\libc\compilers\minilibc\ctype.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.600
+!MESSAGE CC build\kernel\components\libc\compilers\minilibc\math.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.600
+!MESSAGE CC build\kernel\components\libc\compilers\minilibc\qsort.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.610
+!MESSAGE CC build\kernel\components\libc\compilers\minilibc\rand.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.610
+!MESSAGE CC build\kernel\components\libc\compilers\minilibc\stdlib.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.610
+!MESSAGE CC build\kernel\components\libc\compilers\minilibc\string.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.610
+!MESSAGE CC build\kernel\components\libc\compilers\minilibc\time.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.650
+!MESSAGE CC build\kernel\libcpu\arm\common\backtrace.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.650
+!MESSAGE CC build\kernel\libcpu\arm\common\div0.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.660
+!MESSAGE CC build\kernel\libcpu\arm\common\showmem.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.660
+!MESSAGE AS build\kernel\libcpu\arm\cortex-m4\context_gcc.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.660
+!MESSAGE CC build\kernel\libcpu\arm\cortex-m4\cpuport.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.660
+!MESSAGE CC build\kernel\src\clock.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.670
+!MESSAGE CC build\kernel\src\components.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.670
+!MESSAGE CC build\kernel\src\device.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.670
+!MESSAGE CC build\kernel\src\idle.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.680
+!MESSAGE CC build\kernel\src\ipc.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.680
+!MESSAGE CC build\kernel\src\irq.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.680
+!MESSAGE CC build\kernel\src\kservice.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.680
+!MESSAGE CC build\kernel\src\mem.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.680
+!MESSAGE CC build\kernel\src\mempool.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.690
+!MESSAGE CC build\kernel\src\object.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.690
+!MESSAGE CC build\kernel\src\scheduler.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.690
+!MESSAGE CC build\kernel\src\signal.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.690
+!MESSAGE CC build\kernel\src\thread.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.700
+!MESSAGE CC build\kernel\src\timer.o
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.770
+!MESSAGE LINK rt-thread.elf
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.780
+!MESSAGE scons: done building targets.
+
+!ENTRY org.rt-thread.studio.common.ui 1 0 2020-07-12 19:06:47.800
+!MESSAGE finally exit.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-12 19:06:54.376
+!MESSAGE Indexed 'app' (125 sources, 246 headers) in 4.65 sec: 20,248 declarations; 70,390 references; 2 unresolved inclusions; 41 syntax errors; 146 unresolved names (0.16%)
+
+!ENTRY org.rt-thread.studio.rttconfig.core 1 0 2020-07-12 19:07:07.429
+!MESSAGE warning: the default selection PKG_USING_PERIPHERAL_SAMPLES_V040 (defined at D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:20) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:14) is not contained in the choice
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-12 19:16:00.888
+!MESSAGE Indexed 'app' (141 sources, 265 headers) in 2.79 sec: 22,783 declarations; 84,132 references; 2 unresolved inclusions; 59 syntax errors; 161 unresolved names (0.15%)
+
+!ENTRY org.rt-thread.studio.rttconfig.core 1 0 2020-07-12 19:16:54.293
+!MESSAGE warning: the default selection PKG_USING_PERIPHERAL_SAMPLES_V040 (defined at D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:20) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:14) is not contained in the choice
+
+
+!ENTRY org.eclipse.ui 4 0 2020-07-12 19:21:15.738
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.rtthread.studio.rttconfig.ui.tree.RTTConfigurationEditorTree.lambda$3(RTTConfigurationEditorTree.java:736)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.rtthread.studio.application.Application.start(Application.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui 4 0 2020-07-12 19:21:43.093
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.rtthread.studio.rttconfig.ui.tree.RTTConfigurationEditorTree.lambda$3(RTTConfigurationEditorTree.java:736)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.rtthread.studio.application.Application.start(Application.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.rt-thread.studio.rttconfig.core 1 0 2020-07-12 19:26:29.384
+!MESSAGE warning: the default selection PKG_USING_PERIPHERAL_SAMPLES_V040 (defined at D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:20, D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:20) of <choice> (defined at D:/RT-ThreadStudio/platform/env_released/env/packages/packages/misc/samples/peripheral_samples/Kconfig:14) is not contained in the choice
+
+
+!ENTRY org.eclipse.jface.text 4 2 2020-07-12 19:29:30.426
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface.text".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.text.contentassist.CContentAssistProcessor.verifyAutoActivation(CContentAssistProcessor.java:380)
+	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:198)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2014)
+	at java.util.Collections$SingletonSet.forEach(Collections.java:4767)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2013)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2010)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:503)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:498)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.rtthread.studio.application.Application.start(Application.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.jface.text 4 0 2020-07-12 19:29:30.426
+!MESSAGE Error computing completion proposals.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.text.contentassist.CContentAssistProcessor.verifyAutoActivation(CContentAssistProcessor.java:380)
+	at org.eclipse.cdt.internal.ui.text.contentassist.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:198)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2014)
+	at java.util.Collections$SingletonSet.forEach(Collections.java:4767)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2013)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2010)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:503)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:498)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.rtthread.studio.application.Application.start(Application.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SESSION 2020-07-12 20:00:22.015 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_cn_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\coding\multican
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-12 20:00:34.357
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hanbo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-07-12 20:00:35.283
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-07-12 20:00:35.284
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-07-12 20:00:35.285
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
