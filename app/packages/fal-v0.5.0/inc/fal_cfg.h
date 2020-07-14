@@ -29,6 +29,8 @@
 #include <board.h>
 #include <drv_common.h>
 
+#define RT_APP_PART_ADDR 0x08020000
+
 #define NOR_FLASH_DEV_NAME               "W25Q16"
 #define ONCHIP_NAME                      "stm32_onchip"
 
